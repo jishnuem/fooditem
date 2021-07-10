@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 3000px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    background-image: url(./images/pexels-lisa-918327.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    
+}
+.banner .content h1{
+    font-size: 3.5rem;
+    color: #fff;
+    max-width: 100%;
+    margin: 10px;
+}
+.banner .content p{
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 10px;
+}
+ .btn{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: red;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 1s;
+    
+    
+}
+.btn:hover{
+    letter-spacing: 5px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .logo{
+    color: white;
+    font-size: 2rem;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation  li{
+    display: inline-block;
+    list-style-type: none;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s;
+}
+header .navigation li a:hover{
+    letter-spacing: 2px;
+    background-color: red;
+    padding: 8px 16px;
+}
+.about{
+    margin: 80px;
+}
+.titletext span{
+    font-size: 5rem;
+    color: red;
+}
+.titletext {
+    font-size: 1.9rem;
+}
+section{
+    padding: 100px;
+}
+
+ .row{
+    display: flex;
+    justify-content:space-evenly;
+}
+.row .col50{
+    position: relative;
+    width: 50%;
+}
+.about .row .col50 .imgbx{
+    max-width: 100%;
+    object-fit: cover;
+}
+.about .row .col50 .imgbx img{
+    object-fit:cover;
+    height: 450px;
+    width: 100%;
+}
+
+ .title {
+    text-align: center;
+}
+.menu .title .titletext{
+
+
+}
+
+.menu .content{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction:row-reverse;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.menu .content .box{
+    width: 550px;
+    height: 300px;
+    margin: 20px;
+    border: 4px solid black;
+}
+.menu .content .box .imgbx{
+    position: relative;
+    width: 100%;
+    height: 292px;
+}
+.menu .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .text h3{
+    letter-spacing: 2.5px;
+    color: chocolate;
+}
+.menu .title .btn{
+    text-align: center;
+}
+
+.expert .title{
+    margin-top: 80px;
+}
+.expert .content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.expert .content .box{
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+}
+.expert .content .box .imgbx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial{
+    margin-top: 30px;
+    background-image: url(./images/pexels-tejas-prajapati-586744.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonial .content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+        align-items: center;
+}
+.testimonial .content .box{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonial .content .box .imgbx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .content .box .imgbx img{
+    border-radius: 100%;
+    object-fit: cover;
+}
+.testimonial .content .box p{
+    margin: 20px;
+}
+.testimonial .content .box h4{
+    text-align: center;
+    margin-bottom: 30px;
+    padding: -20px;
+}
+.testimonial .title h4{
+    color: white;
+}
+.testimonial .title p{
+    color: white;
+}
+
+.contact{
+    background-color: rgb(214, 181, 181);
+    height: 76vh;
+}
+.contactform{
+    padding: 50px 50px;
+    background-color: rgb(250, 246, 246);
+    max-width: 500px;
+    height: 400px;
+    margin-top: 40px;margin: auto;
+    
+}
+.contactform h3{
+    color: #111;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    border: 1px solid rgb(184, 175, 175);
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contactform .inputbox input[type="submit"]{
+    font-size: 1rem;
+    color: #fff;
+    background-color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: inline-block;
+    max-width: 100%;
+    font-weight: 500;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+.copyright{
+    text-align: center;
+    padding: 15px 40px;
+}
+.copyright a{
+    text-decoration: none;
+    color: red;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+@media (max-width:992px){
+    header{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    section{
+        padding: 10px;
+    }
+    .banner .content h1{
+        font-size: 3rem;
+    }
+    .banner .content p{
+        font-size: 0.9rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 p{
+        width: 100%;
+    }
+}
